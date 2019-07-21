@@ -19,13 +19,17 @@ Colored digital images are mostly represented using three channels RGB and kerne
 ## Why should we only (well mostly) use 3x3 Kernels?
 This question can be answered in two parts. One part is to answer why we are not using even kernels (2x2, 4x4) and the second part is why we are not using bigger kernels (5x5, 7x7, 9x9..). 
 
-First, with even kernels it is difficult to find axis of symmetry. Without centre point, it is difficult to depict information in a symmetric way.
+First, with even kernels the problem is its difficult to find axis of symmetry. Without centre point, it is difficult to depict information in a symmetric way. 
 
-Second, 3x3 is the smallest unit which can be used to compute any kernel size output. If we need 5x5 kernel output, we can use 3x3 twice and if we need 7x7, we can use 3x3 thrice and so on. And GPUs have accelerated 3x3 operation, so it is much faster to perform the convolution using 3x3.
+Second, 3x3 is the smallest unit which can be used to compute any kernel size output. If we need 5x5 kernel output, we can convolve with 3x3 twice and if we need 7x7 output, we can convolve using 3x3 thrice and so on. And GPUs have accelerated 3x3 operation, so it is much faster to perform the convolution using 3x3 kernel.
 
 ## How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations) 
 
-Without Max-pooling, 99 times 3x3 convolution needs to be performed!
+Each time, when a 3x3 convolution is performed, we end up with 2 pixels lesser output channel. When we perform 3x3 on 5x5 image, we get a 3x3 image.
+
+![5-3Convolution](assets/5-3ConvolutionSmall.gif)
+
+Without Max-pooling, **99 times** 3x3 convolution needs to be performed on 199x199 to reach 1x1 image!
 
 
 |  Operation-No | Image O/P	|
