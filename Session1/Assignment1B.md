@@ -4,15 +4,15 @@
 Channels are feature bags where each channel provides a distinct information on a particular feature. Kernels are filters used to extract any particular feature.
 
 For example to bake a pizza in America,
-![Pizza](American.jpg)
+![Pizza](assets/American.jpg)
 
 different channels of Tomato, Cheese, Chillies, Mushrooms, Jalapenos, Olives, base are needed each containing information on respective ingredient - size and the location where it is going to be placed in the pizza.
 
-![Pizza](Pizza3D.bmp)
+![Pizza](assets/Pizza3D.bmp)
 
 If three different kernels are applied on the american pizza to filter Tomatoes, Cheese and Pizza base and if we combine all the three output channels, we might end up with an authentic italian pizza! 
 
-![Pizza](Italian.jfif)
+![Pizza](assets/Italian.jfif)
 
 Colored digital images are mostly represented using three channels RGB and kernels(Mostly 3*3) can be applied on the images to extract any particular information(edges..).
 
