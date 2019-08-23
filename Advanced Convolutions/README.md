@@ -1,6 +1,6 @@
 ### Advanced Convolutions
 
-Run this [network](https://colab.research.google.com/drive/1STOg33u7haqSptyjUL40FZIxNW4XdBQK). After training the network, whatever accuracy you get is your base accuracy. 
+Run this [network](https://colab.research.google.com/drive/1STOg33u7haqSptyjUL40FZIxNW4XdBQK). After training the network, whatever accuracy we get is the base accuracy. 
 
 
 #### Assignment_6A.ipynb
