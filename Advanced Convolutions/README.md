@@ -1,6 +1,6 @@
 ### Advanced Convolutions
 
-Run this network.  (Links to an external site.) After training the network, whatever accuracy you get is your base accuracy. Epochs = 100
+Run this [network](https://colab.research.google.com/drive/1STOg33u7haqSptyjUL40FZIxNW4XdBQK) After training the network, whatever accuracy you get is your base accuracy. Epochs = 100
 * Fix the network above:
 * remove dense
 * add layers required to reach RF
