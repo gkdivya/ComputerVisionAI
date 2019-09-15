@@ -7,6 +7,8 @@
 #### CIFAR10 with Skip-connections
 Design this network (CIFAR10):
 
+![Network with skipConnections](assets/skipConnection.png)
+
 Image result for eNAS network architecture
 The lines are the skip-connections. 
 Train for 100 Epochs (add BN and ReLU after every layer)
