@@ -4,17 +4,19 @@ TensorFlow 1 used lazy execution. It is called lazy because operations are not r
 Tensorflow 2, Eager Execution is introduced where operations are executed eagerly rather than lazy. When we enable eager execution, instead of creating a graph for tensorflow operation, execution happens immediately and the results are available. 
 
 For example
-'''
+
+```
 import tensorflow as tf
 a = tf.constant([1,2,3])
 b = tf.constant([0, 0, 1])
 c = tf.add(a, b)
 
 print(c)
-'''
 
-Lazy Execution will return ''' Tensor("Add:0", shape=(3,), dtype=int32) '''
-Eager execution will return '''tf.Tensor([1 2 4], shape=(3,), dtype=int32)'''
+```
+
+Lazy Execution will return ``` Tensor("Add:0", shape=(3,), dtype=int32) ```
+Eager execution will return ```tf.Tensor([1 2 4], shape=(3,), dtype=int32)```
 
 In both cases, the output is a Tensor. In the second case, the operation has been run eagerly and we can observe directly that the Tensor contains the result ([1 2 4]). In the first case, the Tensor contains information about the addition operation (Add:0), but not the result of the operation.
 
