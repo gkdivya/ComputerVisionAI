@@ -53,8 +53,8 @@ When we call the compute function for the first time, TensorFlow will transparen
 
 TensorFlow AutoGraph can convert most Python statements, such as for loops, while loops, if statements, and iterations. Thanks to graph optimizations, graph execution can sometimes be faster than eager code. More generally, AutoGraph should be used in the following scenarios:
 
-  > When the model needs to be exported to other devices
-  > When performance is paramount and graph optimizations can lead to speed improvements
+  > * When the model needs to be exported to other devices
+  > * When performance is paramount and graph optimizations can lead to speed improvements
   
 Another advantage of graphs is their automatic differentiation. Knowing the full list of operations, TensorFlow can easily compute the gradient for each variable.
 
