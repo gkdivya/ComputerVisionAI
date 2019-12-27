@@ -82,9 +82,21 @@ That is where the gradient tape comes in handy. By running our loss computation 
 def train_step():    
   with tf.GradientTape() as tape:        
     loss = tf.math.abs(A * X - B)    
-    dX = tape.gradient(loss, X)        
-    print('X = {:.2f}, dX = {:2f}'.format(X.numpy(), dX))    
-    X.assign(X - dX)for i in range(7):    
-      train_step()
+  dX = tape.gradient(loss, X)        
+    
+  print('X = {:.2f}, dX = {:2f}'.format(X.numpy(), dX))    
+  X.assign(X - dX)
+    
+for i in range(7):    
+  train_step()
 ```
-The previous code defines a single training step. Every time train_step is called, the loss is computed in the context of the gradient tape. The context is then used to compute the gradient. The X variable is then updated. Indeed, we can see X converging toward the value that solves the equation. Gradient tape is a powerful tool that allows automatic differentiation without much effort.
+The previous code defines a single training step. Every time train_step is called, the loss is computed in the context of the gradient tape. The context is then used to compute the gradient. The X variable is then updated. 
+ >  X = 20.00, dX = 3.000000 
+ >  X = 17.00, dX = 3.000000 
+ >  X = 14.00, dX = 3.000000 
+ >  X = 11.00, dX = 3.000000 
+ >  X = 8.00, dX = 3.000000 
+ >  X = 5.00, dX = 3.000000 
+ >  X = 2.00, dX = 0.000000
+
+Indeed, we can see X converging toward the value that solves the equation. Gradient tape is a powerful tool that allows automatic differentiation without much effort.
