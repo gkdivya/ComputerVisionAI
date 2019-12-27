@@ -101,4 +101,4 @@ The previous code defines a single training step. Every time train_step is calle
 
 Indeed, we can see X converging toward the value that solves the equation. Gradient tape is a powerful tool that allows automatic differentiation without much effort.
 
-Reference: https://www.packtpub.com/application-development/hands-computer-vision-tensorflow-2
+
