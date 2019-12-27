@@ -48,7 +48,7 @@ def compute(a, b, c):
 ```
 When we call the compute function for the first time, TensorFlow will transparently create the following graph:
 
-![Alt text](/path/to/image.jpg)
+![Compute Graph](/12.SuperConvergence/Graph.png)
 
 
 TensorFlow AutoGraph can convert most Python statements, such as for loops, while loops, if statements, and iterations. Thanks to graph optimizations, graph execution can sometimes be faster than eager code. More generally, AutoGraph should be used in the following scenarios:
