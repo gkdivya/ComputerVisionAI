@@ -91,12 +91,12 @@ for i in range(7):
   train_step()
 ```
 The previous code defines a single training step. Every time train_step is called, the loss is computed in the context of the gradient tape. The context is then used to compute the gradient. The X variable is then updated. 
- >  X = 20.00, dX = 3.000000 
- >  X = 17.00, dX = 3.000000 
- >  X = 14.00, dX = 3.000000 
- >  X = 11.00, dX = 3.000000 
- >  X = 8.00, dX = 3.000000 
- >  X = 5.00, dX = 3.000000 
- >  X = 2.00, dX = 0.000000
+ >  X = 20.00, dX = 3.000000  
+ >  X = 17.00, dX = 3.000000   
+ >  X = 14.00, dX = 3.000000   
+ >  X = 11.00, dX = 3.000000   
+ >  X = 8.00, dX = 3.000000   
+ >  X = 5.00, dX = 3.000000   
+ >  X = 2.00, dX = 0.000000  
 
 Indeed, we can see X converging toward the value that solves the equation. Gradient tape is a powerful tool that allows automatic differentiation without much effort.
